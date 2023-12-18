@@ -1,0 +1,30 @@
+img {
+    float: left;
+    display: flex;
+}
+
+a {
+    color: #fbbf7a;
+    text-decoration: none;
+    padding: .25em;
+    margin: .25em;
+}
+
+a:hover {
+    background-color: #214761;
+    color: #e9454f;
+}
+
+.home {
+    color: #fbbf7a;
+    background-color: #45554d;
+    font-size: 12px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.info {
+    float: left;
+    padding: 2em;
+    margin-top: 18em;
+}
