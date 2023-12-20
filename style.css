@@ -28,3 +28,17 @@ a:hover {
     padding: 2em;
     margin-top: 18em;
 }
+
+.work {
+    color: #fbbf7a;
+    background-color: #45554d;
+    font-size: 12px;
+    font-family: monospace;
+    text-align: center;
+}
+
+.work_titles {
+    float: left;
+    padding: 2em;
+    margin-top: 18em;
+}
