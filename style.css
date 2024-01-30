@@ -27,8 +27,8 @@ a:hover {
     float: left;
     padding: 2em;
     margin-top: 18em;
-}
 
-.work {
-    padding: 5em;
+    .work {
+        padding: 5em;
+    }
 }
