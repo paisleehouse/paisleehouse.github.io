@@ -1,20 +1,26 @@
-img {
-    float: left;
-    display: flex;
-}
-
+/*GLOBAL*/
 a {
-    color: #fbbf7a;
+    color: #45554d;
     text-decoration: none;
     padding: .25em;
     margin: .25em;
 }
 
 a:hover {
-    background-color: #214761;
-    color: #e9454f;
+    color: white!important;
 }
 
+.active {
+    background-color: #214761;
+    color: white;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+
+/*PROJECT PAGE*/
 .home {
     color: #fbbf7a;
     background-color: #45554d;
@@ -23,11 +29,167 @@ a:hover {
     text-align: center;
 }
 
-.info {
-    float: left;
-    padding: 2em;
-    margin-top: 18em;
-}
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #fbbf7a; /* gold */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+
+  /* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #45554d;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .active {
+    color: white;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  /*create grid to display projects*/
+  .grid-container {
+    display: grid;
+    height: 75vh;
+
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 12px;
+
+    align-items: center;
+  }
+
+  .grid-container .grid-item-1 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+  }
+
+  .grid-container .grid-item-2 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+  }
+
+  .grid-container .grid-item-3 {
+    grid-column-start: 9;
+    grid-column-end: 11;
+  }
+
+  .grid-item-1 {
+    background-color: #fbbf7a;
+    height: 25%;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .grid-item-2 {
+    background-color: #fbbf7a;
+    height: 25%;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-item-3 {
+    background-color: #fbbf7a;
+    height: 25%;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /*Hover over blocks to see more about projects*/
+
+  .grid-item-1:hover a {
+    background-color: #214761;
+    color: #fbbf7a;
+    transition: 1.2s ease;
+  }
+
+  .grid-item-1:hover {
+    background-color: #214761;
+  }
+
+  .grid-item-2:hover a {
+    background-color: #214761;
+    color: #fbbf7a;
+    transition: 1.2s ease;
+  }
+
+  .grid-item-2:hover {
+    background-color: #214761;
+  }
+
+  .grid-item-3:hover a {
+    background-color: #214761;
+    color: #fbbf7a;
+    transition: 1.2s ease;
+  }
+
+  .grid-item-3:hover {
+    background-color: #214761;
+  }
+
+  .text:hover {
+    color: #fbbf7a;
+    font-size: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .TDX:hover {
+    color: #fbbf7a;
+  }
+
+  /*ABOUT ME PAGE*/
+
+  .aboutMe {
+    font-size: 16px;
+  }
+
+  img {
+    border-radius: 25%;;
+    height: 30%;
+    width: 30%;
+    filter: grayscale(100%);
+  }
+
+  /*RESUME PAGE*/
+
 
 .footer {
     position: fixed;
